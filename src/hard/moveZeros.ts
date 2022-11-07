@@ -7,5 +7,15 @@
 export const moveZeros = (
   arr: (string | number | boolean | null | object | Array<[]>)[]
 ) => {
+  let TotalZeros = 0;
+  let countZeros = arr.reduce((acc, curr, index) => {
+    if (curr === 0) {
+      arr.splice(index, 1);
+      arr.push(0);
+    }
+    return TotalZeros;
+  });
+  return arr;
+};
   return false;
 };
